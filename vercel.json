@@ -3,7 +3,7 @@
   "builds": [
     {
       "src": "assets/src/main.pcss",
-      "use": "@vercel/build",
+      "use": "vercel",
       "config": {
         "commands": ["npm install", "gulp buildStyles"]
       }
