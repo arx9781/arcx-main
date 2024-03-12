@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "assets/src/main.pcss",
+      "use": "@vercel/build",
+      "config": {
+        "commands": ["npm install", "gulp buildStyles"]
+      }
+    }
+  ],
+  "routes": [{ "src": "/(.*)", "dest": "/index.html" }]
+}
